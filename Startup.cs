@@ -37,7 +37,7 @@ namespace Desree
                 configuration.RootPath = "ClientApp/build";
             });
 
-            services.AddDbContext<DesreeDbContext>(opt => opt.UseInMemoryDatabase("ResumeDb"));
+            services.AddDbContext<DesreeDbContext>();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             //services.AddSwaggerGen(c =>
